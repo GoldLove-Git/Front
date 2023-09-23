@@ -78,7 +78,7 @@ const MainPage = () => {
         onClose={() => setIsModalOpen(false)}
         influencer={selectedInfluencer}
         img={selectedInfluencer ? selectedInfluencer.influencerImg : null}
-        id={selectedInfluencer ? selectedInfluencer.id : null}
+        id={selectedInfluencer ? selectedInfluencer.influencerId : null}
         name={selectedInfluencer ? selectedInfluencer.influencerName : null}
       />
     </>

@@ -116,7 +116,7 @@ function Modal({ isOpen, onClose, img, id, name }) {
                 </div>
               )}
               <div className="flex" style={{ width: "380px" }}>
-                <ChatWindow id={id} />
+                <ChatWindow id={id} userId={uid} img={img} />
               </div>
             </div>
           </div>
