@@ -20,7 +20,7 @@ const InfluencerCard = ({ name, img, gold, onClick }) => {
 
   return (
     <>
-      <div className="px-4 sm:w-1/2 lg:w-1/3 overflow-hidden hover:scale-110">
+      <div className="min-w-[250px] px-4 sm:w-1/2 lg:w-1/3 overflow-hidden hover:scale-110">
         <div className="relative w-full h-72 rounded-lg overflow-hidden">
           <img
             className="object-cover w-full h-full"

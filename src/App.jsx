@@ -8,6 +8,7 @@ import MainLayout from "./layouts/MainLayout";
 import LoginPage from "./pages/LoginPage";
 import SignUp from "./pages/SignUp";
 import Mypage from "./pages/Mypage";
+import SearchPage from "./pages/SearchPage";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "mainpage", element: <MainPage /> },
       { path: "signup", element: <SignUp /> },
       { path: "mypage", element: <Mypage /> },
+      { path: "search/:influencerName", element: <SearchPage /> },
     ],
   },
 ]);
