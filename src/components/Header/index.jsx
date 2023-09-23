@@ -10,6 +10,7 @@ const Header = () => {
   const location = useLocation();
 
   const [isSearchHover, setIsSearchHover] = useState(0);
+  const [influencerName, setInfluencerName] = useState("");
 
   const accessToken = localStorage.getItem("accessToken");
 
@@ -17,6 +18,15 @@ const Header = () => {
     if (location.pathname === "/mainpage")
       return window.scrollTo({ top: 0, behavior: "smooth" });
     navigate("/mainpage");
+  };
+
+  const handleInfluencerName = (text) => {
+    setInfluencerName(text);
+  };
+
+  const handleSearch = () => {
+    if (influencerName.length === 0) return alert("검색어를 입력해주세요.");
+    navigate(`/search/${influencerName}`);
   };
 
   return (
@@ -34,11 +44,15 @@ const Header = () => {
         </section>
         <section className="flex items-center">
           <section className="h-4 flex items-center mr-3">
-            <input className="border-b border-gray-200 px-4 py-2" />
+            <input
+              className="border-b border-gray-200 px-4 py-2"
+              onChange={(event) => handleInfluencerName(event.target.value)}
+            />
             <button
               onMouseOver={() => setIsSearchHover(1)}
               onMouseOut={() => setIsSearchHover(0)}
               className="bg-white"
+              onClick={() => handleSearch()}
             >
               <img
                 className="w-6 h-6"
