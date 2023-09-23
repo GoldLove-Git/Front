@@ -121,7 +121,7 @@ function ChatWindow({ id, userId, img }) {
         <input
           className="flex-grow rounded-l px-3 text-sm h-10"
           type="text"
-          placeholder="Type your message…"
+          placeholder="좋아하는 인플루언서에게 응원한마디"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}

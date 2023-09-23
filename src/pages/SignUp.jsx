@@ -220,6 +220,7 @@ const SignupPage = () => {
                 value={ageRange}
                 className="p-2 w-full border rounded-md"
               >
+                <option value="">--선택--</option>
                 <option value="10">{TEENS_TEXT}</option>
                 <option value="20">{TWENTIES_TEXT}</option>
                 <option value="30">{THIRTIES_TEXT}</option>
@@ -245,6 +246,7 @@ const SignupPage = () => {
                 value={gender}
                 className="p-2 w-full border rounded-md"
               >
+                <option value="">--선택--</option>
                 <option value="male">{MALE_TEXT}</option>
                 <option value="female">{FEMALE_TEXT}</option>
               </select>

@@ -121,7 +121,7 @@ function Modal({ isOpen, onClose, img, id, name }) {
             </div>
           </div>
           <div className="flex flex-wrap -mx-2">
-            {data.list_data.map((ad) => (
+            {data.map((ad) => (
               <div
                 key={ad.ads_idx}
                 className={`w-1/3 px-2 mb-4 ${
