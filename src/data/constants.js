@@ -28,3 +28,6 @@ export const HISTORY_GOLD_TEXT = "사용한 골드 내역";
 export const HISTORY_ADVERTISE_TEXT = "참여한 광고 내역";
 export const GOLD_DENOMINATOR = 500000;
 export const LOGOUT = "LOGOUT";
+export const GOLD_HISTORY_NONE_TEXT = "사용한 골드가 없습니다.";
+export const ADVERTISE_HISTORY_NONE_TEXT = "참여한 광고가 없습니다.";
+export const SEARCH_DATA_NONE_TEXT = "검색 결과가 없습니다.";
