@@ -1,0 +1,14 @@
+/* src/custom.css */
+.hidden-scrollbar {
+  @apply overflow-auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  width: 0; /* Chrome, Safari, Edge */
+}
+
+.hidden-scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
